@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
+
+        <title>gpoet</title>
+
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,600" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Merriweather:300,700' rel='stylesheet' type='text/css'>
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href="style.css" rel="stylesheet">
+
+    </head>
+    <body>
+
+        <header>
+            <div class="container">
+                <h1 class="logo"><a href="#" data-scrollto="splash">gpoet</a></h1>
+                <nav>
+                    <div class="float_center">
+                    <ul class="child">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <section id="canvas" class="splash" style="background-color:#ab8aff;">
+            <div class="robot">
+                <div class=robot_button">
+                    <input class="select"
+                        type="image"
+                        height="100"
+                        width="100"
+                        src="images/robot.png"
+                        id = "robot"
+                        onclick="success();"/>
+                </div>
+                <div class="score" id="robot_score">
+                    0
+                </div>
+            </div>
+            <div class="poem" id="poemhouse">
+                <p><b>
+                Snakes, Toads and Vipers by Cecilia Vicuña
+                </b></p>
+
+                <p>
+                This is what happens when you drink too much
+                <br/>
+                or dark chocolate. It's the Mexican Santa Clarita
+                <br/>
+                coming to town last night to do her favz…
+                </p>
+
+                <p>
+                I got home, my cup was half full of whiskey
+                <br/>
+                and hot cocoa, it was a shame to leave
+                <br/>
+                like I did. I had my jacket on and my socks on
+                <br/>
+                and a pair of skinny blue jeans. I tried to walk
+                </p>
+
+                <p>
+                a mile with a skeleton in my shoes
+                <br/>
+                but I couldn't move my feet at all,
+                <br/>
+                I was so hot and sticky and sleepy
+                </p>
+
+                <p>
+                and just plain old boring
+                <br/>
+                I was thinking the time I left
+                <br/>
+                was going to be just like the time I arrived
+                </p>
+
+                <p>
+                I had this alien idea
+                <br/>
+                of making a mountain out of nothing
+                <br/>
+                but the beautiful thing
+                </p>
+
+                <p>
+                I'm back, and I'm going to be
+                <br/>
+                excited to hear the story of my life
+                </p>
+
+                <p>
+                and your story, friend.
+                </p>
+            </div>
+            <div class="pen">
+                <input class="select"
+                    type="image"
+                    height="100"
+                    width="100"
+                    src="images/pen.png"
+                    id = "pen"
+                    onclick="failure();"/>
+                <div class="score" id="human_score">
+                    0
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="container">
+                <div class="copyright">
+                    <p>Created by <a href="http://github.com/vluk" target="_blank">Vernon Luk</a> © 2017</p>
+                </div>
+                <div class="social">
+                    <a href="https://www.winsonluk.com/privacy" target="_blank">Privacy</a>&nbsp | &nbsp<a href="https://www.winsonluk.com/terms" target="_blank">Terms</a>&nbsp | &nbsp<a href="https://www.winsonluk.com/contact">Contact</a>
+                </div>
+            </div>
+        </footer>
+
+        <script src="confetti.js"></script>
+        <script src="fake_poems.js"></script>
+        <script src="real_poems.js"></script>
+        <script src="script.js"></script>
+
+    </body>
+</html>
