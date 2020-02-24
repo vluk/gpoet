@@ -31,7 +31,7 @@ function success(){
   let current_score = parseInt(document.getElementById("human_score").innerHTML);
   current_score++;
   if (current_score == 3){
-    let tbc = new Audio("tbc.mov");
+    let tbc = new Audio("sounds/tbc.mov");
     tbc.play();
     document.getElementById("pen").setAttribute("onclick", "")
     document.getElementById("robot").setAttribute("onclick", "")
@@ -45,7 +45,7 @@ function success(){
     }, 3600);
   }
   else {
-    let audio = new Audio("hmm.mp3");
+    let audio = new Audio("sounds/hmm.mp3");
     audio.play();
     document.getElementById("human_score").innerHTML = `${current_score}`;
 
@@ -59,7 +59,7 @@ function success(){
 function failure(){
   let current_score = parseInt(document.getElementById("robot_score").innerHTML);
   if (current_score == 3){
-    let ghoul = new Audio("ghoul.mov");
+    let ghoul = new Audio("sounds/ghoul.mov");
     ghoul.play();
     document.getElementById("pen").setAttribute("onclick", "")
     document.getElementById("robot").setAttribute("onclick", "")
@@ -71,7 +71,7 @@ function failure(){
     }, 5000);
   }
   else {
-    let audio = new Audio("oof.mp3");
+    let audio = new Audio("sounds/oof.mp3");
     audio.play();
     current_score++;
     document.getElementById("robot_score").innerHTML = `${current_score}`;
