@@ -30,7 +30,7 @@ function refresh(){
 function success(){
   let current_score = parseInt(document.getElementById("human_score").innerHTML);
   current_score++;
-  if (current_score == 3){
+  if (current_score == 4){
     let tbc = new Audio("sounds/tbc.mov");
     tbc.play();
     document.getElementById("pen").setAttribute("onclick", "")
@@ -58,7 +58,7 @@ function success(){
 }
 function failure(){
   let current_score = parseInt(document.getElementById("robot_score").innerHTML);
-  if (current_score == 3){
+  if (current_score == 4){
     let ghoul = new Audio("sounds/ghoul.mov");
     ghoul.play();
     document.getElementById("pen").setAttribute("onclick", "")
